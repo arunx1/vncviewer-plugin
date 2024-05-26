@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
 	<parent>
 		<groupId>org.jenkins-ci.plugins</groupId>
 		<artifactId>plugin</artifactId>
@@ -13,7 +12,7 @@
 		<java.level>8</java.level>
 	</properties>
 	<artifactId>vncviewer</artifactId>
-	<version>1.10-SNAPSHOT</version>
+	<version>1.11-SNAPSHOT</version>
 	<packaging>hpi</packaging>
 
 	<licenses>
@@ -41,6 +40,18 @@
 			<email>dim.tbaum@gmail.com</email>
 		</developer>
 	</developers>
+	<repositories>
+		<repository>
+			<id>repo.jenkins-ci.org</id>
+			<url>https://repo.jenkins-ci.org/public/</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>repo.jenkins-ci.org</id>
+			<url>https://repo.jenkins-ci.org/public/</url>
+		</pluginRepository>
+	</pluginRepositories>
 
 	<url>http://wiki.jenkins-ci.org/display/JENKINS/VncViewer+Plugin</url>
 	<description>This plugin lets you start HTTP based VNC viewer via HTML link directly from Console output</description>

@@ -174,7 +174,8 @@ public class VncViewerBuildWrapper extends SimpleBuildWrapper
 
   public static int findFreePort()
   {
-    try (ServerSocket socket = new ServerSocket(0))
+    int predefinedPort = Integer.parseInt(System.getProperty("VNC_VIEWER_LOCAL_PORT","35455"));
+    try (ServerSocket socket = new ServerSocket(predefinedPort))
     {
       return socket.getLocalPort();
     }
